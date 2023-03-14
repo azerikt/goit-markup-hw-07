@@ -1,0 +1,84 @@
+/*----- main colors -----*/
+$main-text-color: #212121;
+$secondary-text-color: #ffffff;
+$acent-color: #2196f3;
+$owner-text-color: #757575;
+$contener-color: #eeeeee;
+$logo-color-text: #000000;
+$buttons-port-color: #f5f4fa;
+$footer-text-color: rgba(255, 255, 255, 0.6);
+$background-footer-color: #2f303a;
+$background-section: #e5e5e5;
+$line-color: #ececec;
+$icon-color: #afb1b8;
+$buttom-hover-color: #188ce8;
+/*----- main font -----*/
+$main-font: Roboto, sans-serif;
+/*----- animation -----*/
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $main-font;
+  color: $main-text-color;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+address {
+  margin-top: 20px;
+  font-style: normal;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
