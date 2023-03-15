@@ -5,7 +5,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -123,7 +123,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="project section">
         <div class="container">
           <h2 class="project__title">Czym się zajmujemy</h2>
           <ul class="project__list">
@@ -438,5 +438,67 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden order-box" data-modal>
+      <div class="modal__window">
+        <button type="button" class="modal__button-close" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <p class="modal__title">Zostaw swoje dane w formularzu poniżej</p>
+        <form name="order_form" autocomplete="on" novalidate>
+          <label class="modal__lable">
+            <p class="modal__label-title">Imie</p>
+            <input
+              class="modal__input"
+              type="text"
+              name="first-name"
+              required
+            />
+            <svg width="18" height="18" class="modal__input-icon">
+              <use href="./images/icons.svg#user-modal"></use>
+            </svg>
+          </label>
+          <label class="modal__lable">
+            <p class="modal__label-title">Telefon</p>
+            <input class="modal__input" type="text" name="tel" />
+            <svg width="18" height="18" class="modal__input-icon">
+              <use href="./images/icons.svg#tel-modal"></use>
+            </svg>
+          </label>
+          <label class="modal__lable">
+            <p class="modal__label-title">Email</p>
+            <input class="modal__input" type="text" name="email" required />
+
+            <svg width="18" height="18" class="modal__input-icon">
+              <use href="./images/icons.svg#email-modal"></use>
+            </svg>
+          </label>
+
+          <label>
+            <p class="modal__label-title">Komentarz</p>
+            <textarea
+              class="modal__comment"
+              name="comment"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </label>
+          <div class="modal__policy">
+            <label class="modal__check-box">
+              <input class="check__input" type="checkbox" />
+              <span class="check__box"></span>
+            </label>
+            <p class="modal__rulles-text">
+              Oświadczam iż akceptuję
+              <a href="#" class="modal__rulles-link">Regulamin</a> i
+              <a href="#" class="modal__rulles-link">Politykę Prywatności.</a>
+            </p>
+          </div>
+          <button class="modal__button-submit" type="submit">Wyślij</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
